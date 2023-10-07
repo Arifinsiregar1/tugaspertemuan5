@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Penggunaan Multimedia</TITLE>
+<link rel="shortcut icon" href="..\05tple001web1/favicon.ico"> 
+<head>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="endar nirmala">
+<META NAME="Keywords" CONTENT="distance learning">
+<META NAME="Description" CONTENT="pembelajaran on-line">
+</HEAD>
+<BODY>
+
+<div style="text-align:center"> 
+ <button onclick="tekanPause()">Play/Pause</button> 
+ <button onclick="menjadiBig()">Big</button>
+ <button onclick="menjadiSmall()">Small</button>
+ <button onclick="menjadiNormal()">Normal</button>
+ <br><br>
+ <video id="videoku" width="430">
+ <source src="..\Pertemuan4/SIREGAR2.mp4" type="video/mp4">
+ </video>
+</div> 
+<script> 
+var VideoAku = document.getElementById("videoku"); 
+function tekanPause() { 
+ if (VideoAku.paused) 
+ VideoAku.play(); 
+ else 
+ VideoAku.pause(); 
+} 
+function menjadiBig() { 
+ VideoAku.width = 560; 
+} 
+function menjadiSmall() { 
+ VideoAku.width = 320; 
+} 
+function menjadiNormal() { 
+ VideoAku.width = 430; 
+} 
+</script>
+
+<img src="..\Pertemuan4/music.png" width= "200px"  Alt="mybanner" 
+align="center" title="banner"><br>
+<embed src="..\Pertemuan4/SIREGAR.mp3" height="100px" width="200px"></embed><br>
+	
+</BODY>
+</HTML>
